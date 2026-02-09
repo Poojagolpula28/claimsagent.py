@@ -1,11 +1,11 @@
 import json
 
-# Read FNOL text file
+
 def read_fnol_file(file_path):
     with open(file_path, "r") as file:
         return file.read()
 
-# Extract fields from text
+
 def extract_fields(text):
     fields = {}
 
@@ -16,7 +16,7 @@ def extract_fields(text):
 
     return fields
 
-# Check for missing mandatory fields
+
 def find_missing_fields(fields, mandatory_fields):
     missing = []
     for field in mandatory_fields:
@@ -24,7 +24,7 @@ def find_missing_fields(fields, mandatory_fields):
             missing.append(field)
     return missing
 
-# Decide routing
+
 def route_claim(fields, missing_fields):
     reasoning = ""
 
@@ -46,7 +46,7 @@ def route_claim(fields, missing_fields):
 
     return "Standard Processing", "Does not meet fast-track criteria"
 
-# Main program
+
 fnol_text = read_fnol_file("sample_fnol.txt")
 extracted_fields = extract_fields(fnol_text)
 
