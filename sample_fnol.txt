@@ -1,0 +1,7 @@
+Policy Number: POL12345
+Policyholder Name: Ramesh Kumar
+Date: 2026-02-01
+Location: Hyderabad
+Description: Minor accident, no fraud involved
+Claim Type: vehicle
+Estimated Damage: 18000
